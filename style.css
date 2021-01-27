@@ -52,19 +52,22 @@ body{
     align-items: center;
 }
 
-.show-message{
-    display: block;
+.done {
+    display: black;
     padding: 2rem 2.5rem;
     margin: auto;
     color: #F1FFFA;
-    background: #8B95C9;
+    background: #8b8b8b;
     border-radius: 10rem;
-    transition: 0.5s ease;
+    transition: 00.5s ease;
     justify-content: center;
-    width: fit-content; 
-    height: fit-content;
+    width: fit-content;
+    height:  fit-content;
     align-items: center;
-    
+}
+
+.hide-message {
+    display: none;
 }
 
 .minutes, .seconds, .colon{

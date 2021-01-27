@@ -35,8 +35,7 @@ function start() {
                 clearInterval(minutes_interval);
                 clearInterval(seconds_interval);
 
-                document.getElementById("done").innerHTML = "Way to focus! Put the kettle on ☕️";
-                document.getElementById("done").classList.add("show-message");
+                document.getElementById("done").classList.toggle('hide-message');
                 bell.play();
 
             }
@@ -47,3 +46,10 @@ function start() {
         }
     }
 }
+
+function reset(){
+    minutes = 25;
+    seconds = 0;
+    template();
+    document.getElementById('done').classList.add('hide-message');
+} // Connect this to the reset button on the front-end
